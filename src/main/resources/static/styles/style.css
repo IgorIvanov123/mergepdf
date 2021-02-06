@@ -1,0 +1,36 @@
+
+.main-header-merge{
+    color:forestgreen;
+    font-size:250%;
+
+}
+
+.main-header-pdf {
+    color: coral;
+    font-size:250%;
+}
+
+.main-header {
+    display: flex;
+    margin-left: 30%;
+}
+
+.pdf-container {
+    margin: 3%;
+    background-color: darkgray;
+    margin-left: 17.5%;
+    width: 65%;
+    height: 500px;
+    border: 1px dashed black;
+    border-radius: 25px;
+}
+
+.btn-container {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.pdf-label {
+    margin-left: 19%;
+}

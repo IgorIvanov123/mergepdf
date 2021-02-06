@@ -5,8 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="/styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-messages.min.js"></script>
+    
+    <!-- Angular Material Javascript now available via Google CDN; version 1.2.1 used here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.js"></script>
+    <script src="/scripts/application.js"></script>
+    <script src="/scripts/main.controller.js"></script>
+
+
 </head>
-<body>
-    <h1>Hello world!</h1>
+<body ng-app="mergepdfapp" ng-controller="mainController">
+    <div class="main-header">
+        <h1 class="main-header-merge">Merge</h1>
+        <h1 class="main-header-pdf">Pdf</h1>
+    </div>
+    <hr>
+    <div class="main-body">
+        <div class="pdf-label">Drag your pdf here</div>
+        <div class="pdf-container">
+        </div>
+        <div>
+            <button class="btn-container" ng-click="fun()">Merge!</button>
+        </div>
+        <h3 ng-repeat="cat in cats">{{cat}}</h3>
+        <input type="text" ng-model="message" ng-value="message">
+    </div>
 </body>
 </html>
