@@ -1,36 +1,51 @@
-
-.main-header-merge{
-    color:forestgreen;
-    font-size:250%;
-
+html{
+    height: 100%;
 }
 
-.main-header-pdf {
-    color: coral;
-    font-size:250%;
-}
-
-.main-header {
+body{
+    height: 100%;
     display: flex;
-    margin-left: 30%;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: rgba(247,247,247,0.5);
 }
 
-.pdf-container {
-    margin: 3%;
-    background-color: darkgray;
-    margin-left: 17.5%;
-    width: 65%;
-    height: 500px;
-    border: 1px dashed black;
-    border-radius: 25px;
+.logo-wrapper{
+    border-bottom: 2px solid #111;
+    cursor: default;
 }
 
-.btn-container {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
+.logo,
+.content h3,
+.footer {
+    font-family: 'Patua One', cursive !important;
+    margin: 20px 0;
 }
 
-.pdf-label {
-    margin-left: 19%;
+blue-text {
+    color: #5db4ff;
+}
+
+.content {
+    margin-top: 40px;
+}
+
+.description section{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+}
+
+.description section h3{
+    margin: 0 0 10px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 12px;
 }

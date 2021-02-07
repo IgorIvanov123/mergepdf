@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MergePDF</title>
     <link href="/styles/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.css">
 
@@ -12,7 +12,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-aria.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-messages.min.js"></script>
-    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
     <!-- Angular Material Javascript now available via Google CDN; version 1.2.1 used here -->
     <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.js"></script>
     <script src="/scripts/application.js"></script>
@@ -21,20 +28,57 @@
 
 </head>
 <body ng-app="mergepdfapp" ng-controller="mainController">
-    <div class="main-header">
-        <h1 class="main-header-merge">Merge</h1>
-        <h1 class="main-header-pdf">Pdf</h1>
-    </div>
-    <hr>
-    <div class="main-body">
-        <div class="pdf-label">Drag your pdf here</div>
-        <div class="pdf-container">
+
+    <div class="content-wrapper">
+        <div class="container logo-wrapper">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="logo">Merge<blue-text>PDF</blue-text></h1>
+                </div>
+            </div>
         </div>
-        <div>
-            <button class="btn-container" ng-click="fun()">Merge!</button>
+
+        <div class="content">
+            <div class="description">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4 col-lg-4">
+                            <section>
+                                <h3>What's it?</h3>
+                                <p>
+                                    Just a simple PDF merging service. <br>
+                                    With no ads, no pay, no long wait time. <blue-text>Forever.</blue-text>
+                                </p>
+                            </section>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4">
+                            <section>
+                                <h3>How to use?</h3>
+                                <p>
+                                    Drag and drop your .pdf files to the field below. <br>
+                                    Or click it and choose the files in file explorer.
+                                </p>
+                            </section>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4">
+                            <section>
+                                <h3>One more thing</h3>
+                                <p>
+                                    Your files will be stored for 7 days. <br>
+                                    If you want to remove them, use <blue-text>Remove</blue-text> button.
+                                </p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <h3 ng-repeat="cat in cats">{{cat}}</h3>
-        <input type="text" ng-model="message" ng-value="message">
+        
     </div>
+
+    <div class="footer">
+        <span>by Igor Ivanov</span>
+    </div>
+
 </body>
 </html>
