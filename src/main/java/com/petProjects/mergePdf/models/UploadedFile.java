@@ -19,7 +19,6 @@ public class UploadedFile {
     Long Id;
 
     String name;
-    String guid;
     Date uploadedAt;
     Date ttl;
 
@@ -42,14 +41,6 @@ public class UploadedFile {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getGuid() {
-        return this.guid;
-    }
-
-    public void setGuid(String guid) {
-        this.guid = guid;
     }
 
     public Date getUploadedAt() {

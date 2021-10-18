@@ -31,11 +31,15 @@ blue-text {
     margin-top: 40px;
 }
 
-.description section{
+.content-wrapper>.content>.description section{
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
     background-color: white;
+}
+.description {
+    color: initial;
+    font-weight: initial;
 }
 
 .description section h3{
@@ -46,6 +50,11 @@ blue-text {
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-size: 12px;
+}
+
+.fileinput {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }

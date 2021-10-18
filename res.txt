@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<ConfigurationEntry Name="Default Language" 		Value="Русский" />
+	<ConfigurationEntry Name="Run Directory" 		Value="/Work/BRCA/runData" />
+	<ConfigurationEntry Name="XML Input Directory" 	Value="/Work/BRCA/xmlIn" />
+	<ConfigurationEntry Name="XML Output Directory" 	Value="/Work/BRCA/xmlOut" />
+</root>

@@ -8,5 +8,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserSessionRepository extends CrudRepository<UserSession, Long> {
     
-    
+    public UserSession findByToken(String token);
 }
